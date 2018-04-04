@@ -33,10 +33,10 @@ Most webservers can handle all three of the following scenarios:
 | Type       | URL         | Proper Webserver Serves  | GAE Serves            | Makes sense? |
 | ---------- | ----------- | ------------------------ | --------------------- | ------------ |
 | directory  | \_site/fun/ | \_site/fun/index.html    | \_site/fun/index.html | yep          |
-| directory  | \_site/fun  | \_site/fun/index.html    | \_site/fun            | ???          |
-| file       | \_site/fun  | \_site/fun.html          | \_site/fun            | yep          |
+| directory  | \_site/fun  | \_site/fun/index.html    | \_site/fun.html       | ???          |
+| file       | \_site/fun  | \_site/fun.html          | \_site/fun.html       | yep          |
 
-There is a workaround ... you have to tell GAE about every directory and every file in your site!
+There is a workaround ... you have to tell GAE about every directory and file in your site!
 
 ```
 #!/bin/bash
