@@ -8,7 +8,7 @@ categories: kubernetes
 # TL;DR
 Bash rightly is critized as a train wreck when it comes to building
 readable, maintainable scripts. See [Stop writing shell Scripts!](http://databio.org/posts/shell_scripts.html)
-for an example.
+for a sample.
 
 If you're careful, it's possible to write a bash script that is
 sufficiently well-written to justify the extra maintenance costs.
