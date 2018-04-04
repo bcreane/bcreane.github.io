@@ -21,7 +21,7 @@ are not blockers for you.
 to `.html`. Google App Engine takes a [app.yaml](https://cloud.google.com/appengine/docs/standard/python/config/appref)
 description of your site and publishes the interesting relevant files.
 
-## GAE issue: differentiating files and directories
+# GAE issue: differentiating files and directories
 
 One nice feature of [Jekyll](https://jekyllrb.com)
 is [Permalink style](https://jekyllrb.com/docs/permalinks/#builtinpermalinkstyles)
@@ -59,7 +59,7 @@ for example: `https://_site/fun` when they mean to say `https://_site/fun/`
 ```
 #!/bin/bash
 
-# Get all the directories in the _site; e.g. "/v2.0/getting-started".
+# Get all the directories in the _site; e.g. "fun"
 # Output in form "/dir1|/dir2", etc.
 directories=`find _site -type d -print | sed 's/_site\///g' | sort | uniq | grep -v _site | paste -sd "|" -`
 
@@ -73,14 +73,14 @@ printf "  upload: _site/(%s)/index.html\n" $directories
 ```
 
 Okay, this is awkward and doesn't scale, but fortunately we have a pretty small site
-with fewer than 100 directories and 500 files. The generated yaml is big, but
+with fewer than 100 directories and 500 files. The generated `app.yaml` is big, but
 not impossibly big.
 
-## You don't know the mime type for scripts or yaml? Really?
+# You don't know the mime type for scripts or yaml? Really?
 
 Most webservers give you a robust pre-populated list of mime types. There
-are only about a dozen file suffixes in our site, e.g. `yaml`, `txt`, `html`, `jpg`
-and a few more. Nothing exotic.
+are only about a dozen file suffixes in our site, e.g. `yaml`, `txt`, `html`, `jpg`.
+Nothing exotic.
 
 Turns out GAE's webserver doesn't know what to do with `.bash`, `.sh`, or `.yaml`.
 Again, not a big deal, but our script is getting bigger:
@@ -106,7 +106,7 @@ Again, not a big deal, but our script is getting bigger:
 # For all remaining files, let GAE infer mime-type
 ```
 
-## The last straw - GAE sends compressed files (when the client doesn't expect it).
+# The last straw - GAE sends compressed files (when the client doesn't expect it).
 
 This one drove me crazy for a little while. Trying to download a yaml file:
 `curl -O my_kubernetes_manifest.yaml` returned binary junk in the file!
@@ -121,7 +121,7 @@ There are other interesting, and unresolved bugs around this area too. Try the h
 
 The workaround is to force curl to expect a gzipped response:  `curl --compressed -O my_kubernetes_manifest.yaml`
 
-## Conclusion
+# Conclusion
 
 GAE is a subpar approach for serving static content for the reasons outlined above (and others).
 More worryingly, the slow response to outstanding bugs implies Google's attention is elsewhere.
@@ -186,8 +186,7 @@ printf -- "- url: /(.*\\.(%s))$\n" $suffixes
 printf "  static_files: _site/\\\1\n"
 printf "  upload: _site/(.*\\.(%s))$\n" $suffixes
 
-# Get all the directories in the _site; e.g. "/v2.0/getting-started".
-# Output in form "/dir1|/dir2", etc.
+# Enumerate all the directories in the _site; e.g. "fun/". Output in form "/dir1|/dir2", etc.
 directories=`find _site -type d -print | sed 's/_site\///g' | sort | uniq | grep -v _site | paste -sd "|" -`
 
 # Create a handler for URLs with a directory that do NOT have a
