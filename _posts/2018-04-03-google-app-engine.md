@@ -135,7 +135,7 @@ it was designed for, and you don't mind working around bugs, GAE may work for yo
 Here's the bash script for generating the GAE site yaml in it's entirety.
 
 ```
-#!/bin/sh
+#!/bin/bash
 
 # Script that inspects the jekyll-generated _site and emits
 # a Google App Engine service specification file on stdout.
