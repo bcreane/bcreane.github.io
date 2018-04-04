@@ -10,7 +10,7 @@ Google App Engine is very easy to provision - automatic tls certs, friendly
 domain name, caching, scaling and robust debugging are among the useful features.
 
 However using GAE to serve a static Jekyll site (admittedly not it's most
-important use-case) has issues ranging from annoying to serious. 
+important use-case) has issues ranging from annoying to serious.
 
 Before deploying a static site on GAE, make sure the issues outlined below
 are not blockers for you.
@@ -19,15 +19,15 @@ are not blockers for you.
 
 [Jekyll](https://jekyllrb.com) creates a `_site/` directory with all of your site's markdown rendered
 to `.html`. Google App Engine takes a [app.yaml](https://cloud.google.com/appengine/docs/standard/python/config/appref)
-description of your site and publishes the interesting relevant files.
+description of your site and publishes the relevant files.
 
 # GAE issue: differentiating files and directories
 
 One nice feature of [Jekyll](https://jekyllrb.com)
 is [Permalink style](https://jekyllrb.com/docs/permalinks/#builtinpermalinkstyles)
 which let's you link to your pages without annoying suffixes such as `.html`.
-Unfortunately GAE doesn't handle this well. 
-  
+Unfortunately GAE doesn't handle this well.
+
 Most webservers can handle all three of the following scenarios:
 
 | Type       | URL         | Proper Webserver Serves  | GAE Serves            | Makes sense? |
@@ -76,7 +76,7 @@ Okay, this is awkward and doesn't scale, but fortunately we have a pretty small 
 with fewer than 100 directories and 500 files. The generated `app.yaml` is big, but
 not impossibly big.
 
-# You don't know the mime type for scripts or yaml? Really?
+# GAE issue: mime type for scripts or yaml? Really?
 
 Most webservers give you a robust pre-populated list of mime types. There
 are only about a dozen file suffixes in our site, e.g. `yaml`, `txt`, `html`, `jpg`.
@@ -106,10 +106,10 @@ Again, not a big deal, but our script is getting bigger:
 # For all remaining files, let GAE infer mime-type
 ```
 
-# The last straw - GAE sends compressed files (when the client doesn't expect it).
+# GAE issue: GAE sends compressed files, unexpectedly
 
 This one drove me crazy for a little while. Trying to download a yaml file:
-`curl -O my_kubernetes_manifest.yaml` returned binary junk in the file!
+`curl -O https://my.site.io/my_kubernetes_manifest.yaml` returned binary junk in the file!
 
 It turns out GAE _sometimes_ sends back gzipped data, even if the request header of
 the client doesn't say it can accept it. But only on `https`, not `http`. And only
@@ -119,7 +119,8 @@ There's a one-year old bug [Google frontend serves gzipped content even if the c
 
 There are other interesting, and unresolved bugs around this area too. Try the handy [search GAE issues](https://issuetracker.google.com/issues?q=app%20engine%20curl%20https).
 
-The workaround is to force curl to expect a gzipped response:  `curl --compressed -O my_kubernetes_manifest.yaml`
+The workaround is to force curl to expect a gzipped response:
+`curl --compressed -O https://my.site.io/my_kubernetes_manifest.yaml`.
 
 # Conclusion
 
