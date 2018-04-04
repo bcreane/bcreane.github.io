@@ -141,8 +141,8 @@ Here's the bash script for generating the GAE site yaml in it's entirety.
 # a Google App Engine service specification file on stdout.
 
 if [ ! -d _site ]; then
-	echo _site/ doesn\'t exist yet, make sure you run \"jekyll build\".
-	exit 1
+  echo _site/ doesn\'t exist yet, make sure you run \"jekyll build\".
+  exit 1
 fi
 
 cat <<EOF
