@@ -43,11 +43,15 @@ We'll use a few features of "modern" bash (if that's not too much of an oyxmoron
   ```
 
 * Use `local` to reduce the scope of variables, e.g.:
+
   ```
   function fun() {
     local rabbit="marty"  # $rabbit is not visible outside the function "fun()"
     echo "${rabbit}"
   }
+
+  fun             # invoke function "fun()", prints "marty"
+  echo "$rabbit"  # in the global scope, "$rabbit" is uninitialized, prints ""
   ```
 
 # Bash is glue
