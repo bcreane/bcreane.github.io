@@ -13,8 +13,7 @@ for a sample.
 If you're careful, it's possible to write a bash script that is
 sufficiently well-written to (potentially) justify the extra maintenance costs.
 
-I'll solve a useful (to me) problem in both bash as well as golang,
-comparing up-front the costs.
+I'll solve a useful problem in both bash as well as golang, comparing up-front the costs.
 
 First edition: bash script that blocks until a kubernetes pod is "ready,"
 or a timeout fires.
