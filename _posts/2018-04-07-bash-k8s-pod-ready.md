@@ -6,8 +6,8 @@ categories: kubernetes
 ---
 
 # TL;DR
-Bash is rightly critized as a train wreck when it comes to building
-readable, maintainable scripts. See [Stop writing shell Scripts!](http://databio.org/posts/shell_scripts.html)
+Bash is rightly critized as a train wreck when it comes to writing readable,
+maintainable scripts. See [Stop writing shell Scripts!](http://databio.org/posts/shell_scripts.html)
 for a sample.
 
 If you're careful, it's possible to write a bash script that is
