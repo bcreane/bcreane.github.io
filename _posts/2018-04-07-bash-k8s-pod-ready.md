@@ -123,7 +123,7 @@ languages such as golang.
 
 Some of the problems with using bash include:
 
-* Namespaces: bash code usually lives in a single file, and there's obviously no object-oriend
+* Namespaces: bash code usually lives in a single file, and there's obviously no object-oriented
   encapsulation or scope. Using `local` helps a bit since bash variables are global by default.
 
 * Unit and functional tests: writing tests seems possible in theory, but I admit I've never
