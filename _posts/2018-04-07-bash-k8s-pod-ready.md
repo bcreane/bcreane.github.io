@@ -23,7 +23,7 @@ or a timeout fires.
 
 We'll use a few features of "modern" bash (if that's not too much of an oyxmoron):
 
-* subshells: rather than using backticks, isolating a command in a subshell
+* Subshells: rather than using backticks, isolating a command in a subshell
   is good security practice:
 
   ```
