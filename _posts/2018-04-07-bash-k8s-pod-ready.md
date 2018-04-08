@@ -25,17 +25,20 @@ We'll use a few features of "modern" bash (if that's not too much of an oyxmoron
 
 * subshells: rather than using backticks, isolating a command in a subshell
   is good security practice:
+
   ```
     status=$(ls)  # grab the output from a subshell
   ```
 
 * Arithmetic:
+
   ```
     $((count--))  # looks like C if you squint hard enough
   ```
 
 * String regexes: bash supports some python-esque operators which are concise
   and convenient, though you must use the clumsy `[[ ]]` test operator:
+
   ```
       if [[ $(echo "hello, fool") =~ "fool" ]]; then  # search for "fool" substring
         echo You are indeed a fool.
