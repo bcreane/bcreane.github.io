@@ -76,7 +76,7 @@ Okay, this is awkward and doesn't scale, but fortunately we have a pretty small 
 with fewer than 100 directories and 500 files. The generated `app.yaml` is big, but
 not impossibly big.
 
-# GAE issue: mime type for scripts or yaml? Really?
+# GAE issue: mime type for scripts or yaml?
 
 Most webservers give you a robust pre-populated list of mime types. There
 are only about a dozen file suffixes in our site, e.g. `yaml`, `txt`, `html`, `jpg`.
