@@ -11,7 +11,7 @@ While building a simple install script for [Tigera's CNX](https://www.tigera.io/
 product, I received equally emphatic advice to use [bash](https://www.gnu.org/software/bash/)
 as well as [golang](https://golang.org/).
 
-I decided to build the same functionality twice: once in
+I decided to build the same (subset of) functionality twice: once in
 [bash](https://bcreane.github.io/kubernetes/2018/04/07/bash-k8s-pod-ready.html)
 and once again in [golang](https://github.com/bcreane/k8sutils/blob/master/utils.go).
 
@@ -159,3 +159,7 @@ This works about the same as the bash script I wrote a few weeks ago.
 If you need a simple script that's less than a few hundred lines, consider bash.
 Otherwise golang's higher upfront cost but much more robust extensibility and
 verifiability are a better choice.
+
+The real install script has grown to about 1,000 lines of bash. Don't forget to allow
+head room for feature creep - your 50 line bash script may grow into 500 lines before
+you know it!
