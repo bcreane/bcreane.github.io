@@ -4,6 +4,8 @@ title: About
 permalink: /about/
 ---
 
+<img style="float: right;" src="/images/Brendan-head-shot-small.jpg">
+
 Brendan Creane is a software engineer with a passion for building
 highly effective engineering teams and learning new and exciting
 technologies.
