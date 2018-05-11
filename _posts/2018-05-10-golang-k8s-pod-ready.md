@@ -161,7 +161,7 @@ This works about the same as the bash script I wrote a few weeks ago.
 # Take away
 
 * Bash is quicker to write and often more condensed than golang since it builds on
-  powerful utilities such as `kubectl`..
+  powerful utilities such as `kubectl`.
 * golang is more maintainable and robust, and frankly cooler.
 
 If you need a simple script that's less than a few hundred lines, consider bash.
