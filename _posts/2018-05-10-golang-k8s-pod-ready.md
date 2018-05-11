@@ -23,9 +23,10 @@ and once again in [golang](https://github.com/bcreane/k8sutils/blob/master/utils
 
 # Wait till pod is running - golang edition
 
-My package builds on the [kubernetes e2e utils framework](https://github.com/kubernetes/kubernetes/blob/master/test/e2e/framework/util.go).
+My package builds upon the
+[kubernetes e2e utils framework](https://github.com/kubernetes/kubernetes/blob/master/test/e2e/framework/util.go).
 This robust framework monitors the state of a kubernetes cluster using
-[client-go](https://github.com/kubernetes/client-go) library.
+[client-go](https://github.com/kubernetes/client-go).
 
 ```golang
 
@@ -148,7 +149,13 @@ func main() {
 }
 ```
 
-Invoking the program is simple: `./watch --selector=k8s-app=kube-dns --namespace=kube-system --timeout=5`. 
+Invoking the program is simple: 
+
+```bash
+    # Wait up to 30 seconds for pods w/ selector and namespace to enter running phase
+    ./watch --selector=k8s-app=kube-dns --namespace=kube-system --timeout=30`
+```
+
 This works about the same as the bash script I wrote a few weeks ago.
 
 # Take away
