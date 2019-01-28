@@ -11,8 +11,9 @@ highly effective engineering teams and learning new and exciting
 technologies.
 
 I work at [tigera.io](https://www.tigera.io/) on
-[https://www.projectcalico.org/](https://www.projectcalico.org/) - 
-a pure layer 3 approach to virtual networking.
+[projectcalico.org](https://www.projectcalico.org/)
+and [Tigera Secure Enterprise Edition](https://www.tigera.io/tigera-secure-ee/)
+which provide secure networking for the cloud native era.
 
 Visit my [LinkedIn profile](https://www.linkedin.com/in/brendancreane/)
 for more information.
