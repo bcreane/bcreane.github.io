@@ -12,7 +12,7 @@ technologies.
 
 I work at [tigera.io](https://www.tigera.io/) on
 [projectcalico.org](https://www.projectcalico.org/)
-and [Tigera Secure Enterprise Edition](https://www.tigera.io/tigera-secure-ee/)
+and [Calico Enterprise](https://www.tigera.io/tigera-products/calico-enterprise/)
 which provide secure networking for the cloud native era.
 
 Visit my [LinkedIn profile](https://www.linkedin.com/in/brendancreane/)
