@@ -19,5 +19,3 @@ I love learning new technologies; my C++ / embedded Linux days still bring me jo
 
 Visit my [LinkedIn profile](https://www.linkedin.com/in/brendancreane/)
 for more information.
-
-<script src="https://platform.linkedin.com/badges/js/profile.js" async defer type="text/javascript"></script>
