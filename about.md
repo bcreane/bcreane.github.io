@@ -13,7 +13,9 @@ Past roles include:
 * Riverbed - lead the SF-based team responsible for integrating a Linux-based, embedded firewall into Riverbed's WAN-optimizaiton and SD-WAN product lines. 
 * Apple - individual contributor building Unix device drivers for Apple's A/UX product (Apple Unix).
 
-I love learning new technologies; my C++ / embedded Linux days still bring me joy,
-but now I'm mostly coding (and reviewing my team's designs / deliverables) golang-based microservices. 
+I love learning new technologies; my latest incarnation is architecting and building
+high performance Golang cybersecurity web applications. I'm always hungry to explore new domains,
+for example, I led Tigera's Machine Learning team and built domain experience with Scala,
+Python, and data pipelines in the context of delivering timely/nuanced security alerts.
 
 Visit my [LinkedIn profile](https://www.linkedin.com/in/brendancreane/) for more information.
