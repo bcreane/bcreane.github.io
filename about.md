@@ -6,9 +6,8 @@ teams and learning new and exciting technologies.
 I work at Corelight Inc. leading two teams:
 * Fleet team builds a Golang / Kubernetes appliance that manages a "Fleet" of NDR (network detection and response) "sensors".
 * UI team - builds React-based Web applications, e.g. "Fleet" and "Investigator".
-*
-Past roles include:
 
+Past roles include:
 * [PANW](paloaltonetworks.com) - lead a team that delivers a Kubernetes / Golang platform for multiple teams.
 * [tigera.io](https://www.tigera.io/) on [projectcalico.org](https://www.projectcalico.org/) and [Calico Enterprise](https://www.tigera.io/tigera-products/calico-enterprise/) which provide secure networking for the cloud native era.
 * Riverbed - leading the SF-based team responsible for integrating a Linux-based, embedded firewall into Riverbed's WAN-optimizaiton and SD-WAN product lines. 
