@@ -17,7 +17,7 @@ title: Brendan Creane -- Dev Notes
 email: bcreane@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
   Dev notes.
-baseurl: "" # the subpath of your site, e.g. /blog
+baseurl: "/about" # the subpath of your site, e.g. /blog
 url: "https://bcreane.github.io/about"
 github_username: bcreane
 
