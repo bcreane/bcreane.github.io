@@ -7,7 +7,7 @@ new domains. For example, I led Tigera's Machine Learning team and built domain 
 with Scala, Python (Pandas), and data pipelines in the context of delivering
 timely/nuanced security alerts.
 
-<img style="float: right;" src="/images/bcreane-headshot-color-small.jpg">
+<img style="float: right;" src="/images/bcreane-coffee-small.jpg">
 
 I work at Corelight Inc. leading two teams:
 * Fleet team builds a Golang / Kubernetes appliance that manages a "Fleet" of NDR (network detection and response) "sensors".
