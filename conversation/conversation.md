@@ -2,6 +2,8 @@
 layout: page
 permalink: /conversation/
 sitemap: false
+title: ""
+nav_exclude: true
 ---
 
 # Conversation with Brendan

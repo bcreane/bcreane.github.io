@@ -23,15 +23,17 @@ github_username: bcreane
 
 # Build settings
 markdown: kramdown
-theme: minima
+remote_theme: jekyll/minima
 minima:
   skin: dark
 
 # Configure header pages (only these will show in navigation)
+# Empty list means no pages in navigation
 header_pages: []
 
 plugins:
   - jekyll-feed
+  - jekyll-remote-theme
 
 # Sass configuration
 sass:
