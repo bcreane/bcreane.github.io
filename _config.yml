@@ -23,7 +23,7 @@ github_username: bcreane
 
 # Build settings
 markdown: kramdown
-remote_theme: jekyll/minima
+theme: minima
 minima:
   skin: dark
 
@@ -32,7 +32,6 @@ header_pages: []
 
 plugins:
   - jekyll-feed
-  - jekyll-remote-theme
 
 # Sass configuration
 sass:
@@ -41,11 +40,13 @@ sass:
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
 # to override the default setting.
-# exclude:
-#   - Gemfile
-#   - Gemfile.lock
-#   - node_modules
-#   - vendor/bundle/
-#   - vendor/cache/
-#   - vendor/gems/
-#   - vendor/ruby/
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+  - conversation/conversation_with_brendan.py
+  - private/

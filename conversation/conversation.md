@@ -1,6 +1,7 @@
 ---
 layout: page
 permalink: /conversation/
+sitemap: false
 ---
 
 # Conversation with Brendan
@@ -158,5 +159,5 @@ if __name__ == "__main__":
 
 ## Download
 
-You can download the script here: [conversation_with_brendan.py](/tmp/conversation_with_brendan.py)
+You can download the script here: [conversation_with_brendan.py](/conversation/conversation_with_brendan.py)
 
