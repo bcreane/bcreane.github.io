@@ -1,6 +1,7 @@
 ---
 layout: default
 permalink: /conversation/
+exclude: true
 ---
 
 # Conversation with Brendan

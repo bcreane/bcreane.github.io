@@ -26,6 +26,11 @@ markdown: kramdown
 theme: minima
 minima:
   skin: dark
+
+# Configure header pages
+header_pages:
+  - index.md
+
 plugins:
   - jekyll-feed
 
