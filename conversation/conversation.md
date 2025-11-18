@@ -8,7 +8,7 @@ nav_exclude: true
 
 # Conversation with Brendan
 
-A fun chatbot that responds using characteristic phrases and a dry sense of humor. This Python script uses the OpenAI API to create a conversational AI with personality.
+A chatbot that responds using characteristic phrases and a dry sense of humor. This Python script uses the OpenAI API to create a conversational AI with personality. You'll have to pay for your own OpenAPI tokens to run it.
 
 ## Features
 
@@ -43,16 +43,16 @@ client = OpenAI(api_key=os.environ.get("OPENAI_API_KEY"))
 BRENDAN_PHRASES = [
     "glass half empty",
     "but then I would have to kill you",
+    "Shhh, my noise canceling headphones aren't quite canceling enough.",
     "day drinking",
     "Are you sure you aren't a pod person?",
     "Looks like a metadata issue.",
     "do you smell that too?",
-    "Its probably Mike Handler's fault",
-    "The plan has three quarters of features in the next quarter.",
+    "Its probably Mike H's fault",
+    "The plan has three quarters of features stuffed into the next quarter.",
     "Definitely a sensor issue",
-    "My personal grooming has fallen behind schedule",
+    "My personal grooming has fallen behind",
     "Perhaps another week in Orlando Florida will change your mind?",
-    "Shhh, my noise canceling headphones aren't quite canceling enough.",
     "We can get that new feature into a patch release."
 ]
 
