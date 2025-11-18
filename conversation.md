@@ -1,3 +1,29 @@
+---
+layout: default
+permalink: /conversation/
+---
+
+# Conversation with Brendan
+
+A fun chatbot that responds using characteristic phrases and a dry sense of humor. This Python script uses the OpenAI API to create a conversational AI with personality.
+
+## Features
+
+- Interactive command-line chatbot
+- Maintains conversation history
+- Incorporates characteristic phrases naturally into responses
+- Slightly sardonic but helpful tone
+
+## Usage
+
+```bash
+export OPENAI_API_KEY='your-api-key'
+python3 conversation_with_brendan.py
+```
+
+## Source Code
+
+```python
 #!/usr/bin/env python3
 """
 Conversation with Brendan - A chatbot that responds using Brendan's characteristic phrases
@@ -18,7 +44,7 @@ BRENDAN_PHRASES = [
     "Are you sure you aren't a pod person?",
     "Looks like a metadata issue.",
     "do you smell that too?",
-    "Its probably Mike H's fault",
+    "Its probably Mike Handler's fault",
     "The plan has three quarters of features in the next quarter.",
     "Definitely a sensor issue",
     "My personal grooming has fallen behind schedule",
@@ -128,4 +154,9 @@ def main():
 
 if __name__ == "__main__":
     main()
+```
+
+## Download
+
+You can download the script here: [conversation_with_brendan.py](/tmp/conversation_with_brendan.py)
 

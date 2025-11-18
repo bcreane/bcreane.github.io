@@ -24,8 +24,14 @@ github_username: bcreane
 # Build settings
 markdown: kramdown
 theme: minima
+minima:
+  skin: dark
 plugins:
   - jekyll-feed
+
+# Sass configuration
+sass:
+  quiet_deps: true
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
