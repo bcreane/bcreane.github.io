@@ -9,11 +9,8 @@ timely/nuanced security alerts.
 
 <img style="float: right;" src="/images/bcreane-coffee-small.jpg">
 
-I work at Corelight Inc. leading two teams:
-* Fleet team builds a Golang / Kubernetes appliance that manages a "Fleet" of NDR (network detection and response) "sensors".
-* UI team - building beautiful React-based Web applications, e.g. "Fleet" and "Investigator".
-
 Past roles include:
+* [Corelight](corelight.com) - lead a team that delivers a sophisticated control plane for Corelight sensors. Scope includes both a golang backend and a React/TS front-end.
 * [PANW](paloaltonetworks.com) - lead a team that delivers a Kubernetes / Golang SaaS web application platform for managing both virtual and physical firewall devices.
 * [tigera.io](https://www.tigera.io/) on [projectcalico.org](https://www.projectcalico.org/) and [Calico Enterprise](https://www.tigera.io/tigera-products/calico-enterprise/) lead the SF-based engineering team responsible for both open source Calico as well as Tigera's Enterprise SaaS - delivers real-time security posture monitoring in Kubernetes environments.
 * Riverbed - lead the SF-based team responsible for integrating a Linux-based, embedded firewall into Riverbed's WAN-optimizaiton and SD-WAN product lines.
