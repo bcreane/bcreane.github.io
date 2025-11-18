@@ -1,7 +1,6 @@
 ---
-layout: default
+layout: page
 permalink: /conversation/
-exclude: true
 ---
 
 # Conversation with Brendan

@@ -27,9 +27,8 @@ remote_theme: jekyll/minima
 minima:
   skin: dark
 
-# Configure header pages
-header_pages:
-  - index.md
+# Configure header pages (only these will show in navigation)
+header_pages: []
 
 plugins:
   - jekyll-feed
