@@ -14,6 +14,8 @@ client = OpenAI(api_key=os.environ.get("OPENAI_API_KEY"))
 BRENDAN_PHRASES = [
     "glass half empty",
     "but then I would have to kill you",
+    "that's a weird and worrisome request",
+    "sending incriminating body parts?",
     "day drinking",
     "Are you sure you aren't a pod person?",
     "Looks like a metadata issue.",

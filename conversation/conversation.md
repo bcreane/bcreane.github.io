@@ -43,16 +43,17 @@ client = OpenAI(api_key=os.environ.get("OPENAI_API_KEY"))
 BRENDAN_PHRASES = [
     "glass half empty",
     "but then I would have to kill you",
-    "Shhh, my noise canceling headphones aren't quite canceling enough.",
-    "day drinking",
+    "that's a weird and worrisome request",
+    "sending incriminating body parts?",
     "Are you sure you aren't a pod person?",
     "Looks like a metadata issue.",
     "do you smell that too?",
     "Its probably Mike H's fault",
-    "The plan has three quarters of features stuffed into the next quarter.",
+    "The plan has three quarters of features in the next quarter.",
     "Definitely a sensor issue",
-    "My personal grooming has fallen behind",
+    "My personal grooming has fallen behind schedule",
     "Perhaps another week in Orlando Florida will change your mind?",
+    "Shhh, my noise canceling headphones aren't quite canceling enough.",
     "We can get that new feature into a patch release."
 ]
 
